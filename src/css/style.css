@@ -1,0 +1,112 @@
+/* Estils bàsics per a la pàgina */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#sobre-mi {
+  align-items: center;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+p {
+  margin-bottom: 50px;
+}
+
+/* Secció "Sobre Mi" */
+/* Secció Projectes amb Flexbox */
+#projectes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.projecte {
+  flex: 1 1 45%; /* Permet que els projectes ocupin fins a un 45% de l'ample */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  max-width: 50%;
+}
+
+.projecte img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Efecte hover sobre les targetes */
+.projecte:hover {
+  transform: scale(1.05);
+}
+
+/* Secció Contacte */
+#contacte {
+  background-color: #f8f9fa;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estil enllaç de correu */
+#contacte a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacte a:hover {
+  text-decoration: underline;
+}
+
+/* Estils per a pantalles petites (mòbils) */
+@media (max-width: 767px) {
+  #projectes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projecte {
+    margin-bottom: 20px;
+  }
+
+  .projecte img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Estils per a pantalles grans (tablets i escriptoris) */
+@media (min-width: 768px) {
+  #projectes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
