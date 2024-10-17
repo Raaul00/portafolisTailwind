@@ -4,51 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolis</title>
-    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-100 text-gray-800 text-center">
     <!-- Secció Sobre Mi -->
-    <section id="sobre-mi">
-      <h1>Sobre Mi</h1>
-      <p>
-        Sóc en Raúl, un/a desenvolupador/a web amb passió per crear solucions
+    <section id="sobre-mi" class="p-10 mx-12 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Sobre Mi</h1>
+      <p class="mb-12">
+        Sóc en Raúl, un desenvolupador web amb passió per crear solucions
         creatives i eficients. M'encanta treballar amb HTML, CSS, i JavaScript
         per crear interfícies úniques i intuïtives.
       </p>
-      <img src="src/img/sobremi.png" alt="Imatge sobre mi" />
+      <img
+        src="src/img/sobremi.png"
+        alt="Imatge sobre mi"
+        class="w-full max-w-xs mx-auto rounded-lg"
+      />
     </section>
 
     <!-- Secció Projectes -->
-    <section id="projectes">
-      <h2>Els Meus Projectes</h2>
-      <div class="projecte">
-        <img src="src/img/memory.jpg" alt="Projecte 1" />
-        <h3>Memory</h3>
+    <section
+      id="projectes"
+      class="py-10 px-10 flex flex-wrap justify-center items-start gap-6"
+    >
+      <h2 class="text-3xl font-bold text-gray-800 w-full mb-6">
+        Els Meus Projectes
+      </h2>
+
+      <div
+        class="projecte bg-white border border-gray-300 rounded-lg p-6 w-full max-w-lg text-left transition-transform transform hover:scale-105"
+      >
+        <img
+          src="src/img/memory.jpg"
+          alt="Projecte 1"
+          class="w-full max-w-xs mx-auto rounded-lg mb-4"
+        />
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">Memory</h3>
         <p>
           Quan cursaba el grau superior de Desenvolupament Web, vaig fer un
-          projecte Java sobre el famos joc del Memory, vaig implementar un
-          sistema de Log-in i Register amb una conexió a base de dades. El joc
-          guardaba les millors puntuacions dels usuaris a la base de dades i els
-          acerts i errors de cada usuari.
+          projecte Java sobre el famós joc del Memory, vaig implementar un
+          sistema de Log-in i Register amb una connexió a base de dades.
         </p>
       </div>
-      <div class="projecte">
-        <img src="src/img/esport.jpg" alt="Projecte 2" />
-        <h3>Gestió d'esdeveniments esportius</h3>
+
+      <div
+        class="projecte bg-white border border-gray-300 rounded-lg p-6 w-full max-w-lg text-left transition-transform transform hover:scale-105"
+      >
+        <img
+          src="src/img/esport.jpg"
+          alt="Projecte 2"
+          class="w-full max-w-xs mx-auto rounded-lg mb-4"
+        />
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+          Gestió d'esdeveniments esportius
+        </h3>
         <p>
           El meu primer projecte PHP en entorn servidor va ser una aplicació per
-          poder gestionar esdeveniments esportius, on els usuaris es poden
-          registrar i crear els seus propis esdeveniments.
+          gestionar esdeveniments esportius, on els usuaris es poden registrar i
+          crear els seus propis esdeveniments.
         </p>
       </div>
     </section>
 
     <!-- Secció Contacte -->
-    <section id="contacte">
-      <h2>Contacte</h2>
+    <section id="contacte" class="bg-gray-200 py-10 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Contacte</h2>
       <p>
         Pots posar-te en contacte amb mi a través del meu
-        <a href="mailto:elmeucorreu@example.com">correu electrònic</a>.
+        <a
+          href="mailto:elmeucorreu@example.com"
+          class="text-blue-600 font-bold hover:underline"
+          >correu electrònic</a
+        >.
       </p>
     </section>
 
